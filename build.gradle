@@ -27,7 +27,8 @@ def restAssuredVersion = "5.2.0",
     jacksonVersion = "2.13.4",
     selenideVersion = "6.8.1",
     allureVersion = "2.19.0",
-    fakerVersion = "1.0.2"
+    fakerVersion = "1.0.2",
+    ownerVersion = "1.0.4"
 
 dependencies {
     testImplementation(
@@ -37,7 +38,8 @@ dependencies {
             "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion",
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
-            "com.github.javafaker:javafaker:$fakerVersion"
+            "com.github.javafaker:javafaker:$fakerVersion",
+            "org.aeonbits.owner:owner:$ownerVersion"
     )
 }
 
