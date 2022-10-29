@@ -24,8 +24,7 @@ public class TestBase {
         Configuration.browserCapabilities = capabilities;
 
         ConfigProvider config = new ConfigProvider();
-        config.setConfiguration("remote"); // конфиг для удаленного запуска
-        //config.setConfiguration("local"); // раскомментить для локального запуска
+        config.setConfiguration();
     }
 
     @AfterEach

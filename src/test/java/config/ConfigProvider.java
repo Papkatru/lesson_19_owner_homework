@@ -6,8 +6,7 @@ import org.aeonbits.owner.ConfigFactory;
 
 public class ConfigProvider {
 
-    public ConfigProvider setConfiguration(String environment) {
-        System.setProperty("environment", environment);
+    public ConfigProvider setConfiguration() {
         Config config = ConfigFactory.create(Config.class, System.getProperties());
         Configuration.remote = config.getRemoteUrl();
         Configuration.browser = config.getBrowserName();
